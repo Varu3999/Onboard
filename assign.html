@@ -43,7 +43,8 @@
 	var pubnub = new PubNub({
       publishKey:   'pub-c-27b94a8d-253c-4e9b-a169-a9b028a101cc',
       subscribeKey: 'sub-c-dfa4069c-3b53-11e9-b221-7a660e69c40f',
-      ssl: true
+      ssl: true,
+	reconnectPolicy: 'PNReconnectionPolicy.LINEAR'	
     });
         
         var al = function(payload){
